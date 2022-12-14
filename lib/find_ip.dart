@@ -20,8 +20,7 @@ class _MobileIpState extends State<MobileIp> {
   
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
+    return  Scaffold(
         appBar: AppBar(
           title: const Text('IP Example app'),
         ),
@@ -63,8 +62,7 @@ class _MobileIpState extends State<MobileIp> {
           },
           child: const Icon(Icons.refresh),
         ),
-      ),
-    );
+      );
   }
 
   Widget _buildIpWidget(BuildContext context, AsyncSnapshot<String?> snapshot) {
